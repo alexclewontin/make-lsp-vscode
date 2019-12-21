@@ -1,0 +1,236 @@
+[{
+    "data": 0,
+    "documentation": "Dummy entry to keep the indicies consistent. While we're at it, here's some important info that we can't comment in a json file: Original work Copyright (c) Free Software Foundation, Inc. All rights reserved. Modified work Copyright (c) Alex C. Lewontin. All rights reserved. See LICENSE for license information."
+},
+{
+    "data": 1,
+    "documentation": "The file name of the target of the rule. \n\nIf the target is an archive member, then ‘$@’ is the name of the archive file. For example, if the target is foo.a(bar.o) then ‘$%’ is bar.o and ‘$@’ is foo.a."
+},
+{
+    "data": 2,
+    "documentation": "The target member name, when the target is an archive member. For example, if the target is foo.a(bar.o) then ‘$%’ is bar.o and ‘$@’ is foo.a. ‘$%’ is empty when the target is not an archive member."
+},
+{
+    "data": 3,
+    "documentation": "The name of the first prerequisite. \n\nIf the target got its recipe from an implicit rule, this will be the first prerequisite added by the implicit rule"
+},
+{
+    "data": 4,
+    "documentation": "The names of all the prerequisites that are newer than the target, with spaces between them. \n\nFor prerequisites which are archive members, only the named member is used"
+},
+{
+    "data": 5,
+    "documentation": "The names of all the prerequisites, with spaces between them. \n\nFor prerequisites which are archive members, only the named member is used. \n\nA target has only one prerequisite on each other file it depends on, no matter how many times each file is listed as a prerequisite. So if you list a prerequisite more than once for a target, the value of $^ contains just one copy of the name. \n\nThis list does not contain any of the order-only prerequisites; for those see the ‘$|’ variable."
+},
+{
+    "data": 6,
+    "documentation": "The names of all the prerequisites, with spaces between them, but prerequisites listed more than once are duplicated in the order they were listed in the makefile. \n\nThis is primarily useful for use in linking commands where it is meaningful to repeat library file names in a particular order."
+},
+{
+    "data": 7,
+    "documentation": "The names of all the order-only prerequisites, with spaces between them."
+},
+{
+    "data": 8,
+    "documentation": "The stem of the target of the rule. Behaves differently depending on the context \n\nIn an implicit rule, if the target is dir/a.foo.b and the target pattern is a.%.b then the stem is dir/foo. The stem is useful for constructing names of related files. \n\nIn a static pattern rule, the stem is part of the file name that matched the ‘%’ in the target pattern. \n\nif the target name ends with a recognized suffix, ‘$*’ is set to the target name minus the suffix. GNU make does this only for compatibility with other implementations of make. You should generally avoid using ‘$*’ in explicit rules."
+},
+{
+    "data": 9,
+    "documentation": "The directory part of the file name of the target, with the trailing slash removed. \n\nIf the value of ‘$@’ is dir/foo.o then ‘$(@D)’ is dir. \n\nThis value is . if ‘$@’ does not contain a slash."
+},
+{
+    "data": 10,
+    "documentation": "The file-within-directory part of the file name of the target. \n\nIf the value of ‘$@’ is dir/foo.o then ‘$(@F)’ is foo.o. \n\n‘$(@F)’ is equivalent to ‘$(notdir $@)’."
+},
+{
+    "data": 11,
+    "documentation": "The directory part of the stem of the target, with the trailing slash removed. \n\nIf the value of ‘$@’ is dir/foo.o then ‘$(*D)’ is dir. \n\nThis value is . if ‘$@’ does not contain a slash."
+},
+{
+    "data": 12,
+    "documentation": "The file-within-directory part of the stem of the target. If the value of ‘$@’ is dir/foo.o then ‘$(*F)’ is foo."
+},
+{
+    "data": 13,
+    "documentation": "The directory part of the target archive member name. \n\nThis makes sense only for archive member targets of the form archive(member) and is useful only when member may contain a directory name. "
+},
+{
+    "data": 14,
+    "documentation": "The file-within-directory part of the target archive member name. \n\nThis makes sense only for archive member targets of the form archive(member) and is useful only when member may contain a directory name. "
+},
+{
+    "data": 15,
+    "documentation": "The directory part of the first prerequisite."
+},
+{
+    "data": 16,
+    "documentation": "The file-within-directory part of the first prerequisite."
+},
+{
+    "data": 17,
+    "documentation": "List of the directory parts of all prerequisites."
+},
+{
+    "data": 18,
+    "documentation": "List of the file-within-directory parts of all prerequisites."
+},
+{
+    "data": 19,
+    "documentation": "List of the directory parts of all prerequisites, including multiple instances of duplicated prerequisites."
+},
+{
+    "data": 20,
+    "documentation": "List of the file-within-directory parts of all prerequisites, including multiple instances of duplicated prerequisites."
+},
+{
+    "data": 21,
+    "documentation": "List of the directory parts of all prerequisites that are newer than the target."
+},
+{
+    "data": 22,
+    "documentation": "List of the file-within-directory parts of all prerequisites that are newer than the target."
+},
+{
+    "data": 23,
+    "documentation": "Archive-maintaining program; default ‘ar’."
+},
+{
+    "data": 24,
+    "documentation": "Program for compiling assembly files; default ‘as’."
+},
+{
+    "data": 25,
+    "documentation": "Program for compiling C programs; default ‘cc’."
+},
+{
+    "data": 26,
+    "documentation": "Program for compiling C++ programs; default ‘g++’."
+},
+{
+    "data": 27,
+    "documentation": "Program for running the C preprocessor, with results to standard output; default ‘$(CC) -E’."
+},
+{
+    "data": 28,
+    "documentation": "Program for compiling or preprocessing Fortran and Ratfor programs; default ‘f77’."
+},
+{
+    "data": 29,
+    "documentation": "Program to use to compile Modula-2 source code; default ‘m2c’."
+},
+{
+    "data": 30,
+    "documentation": "Program for compiling Pascal programs; default ‘pc’."
+},
+{
+    "data": 31,
+    "documentation": "Program for extracting a file from RCS; default ‘co’."
+},
+{
+    "data": 32,
+    "documentation": "Program for extracting a file from SCCS; default ‘get’."
+},
+{
+    "data": 33,
+    "documentation": "Program to use to turn Lex grammars into source code; default ‘lex’."
+},
+{
+    "data": 34,
+    "documentation": "Program to use to turn Yacc grammars into source code; default ‘yacc’."
+},
+{
+    "data": 35,
+    "documentation": "Program to use to run lint on source code; default ‘lint’."
+},
+{
+    "data": 36,
+    "documentation": "Program to convert a Texinfo source file into an Info file; default ‘makeinfo’."
+},
+{
+    "data": 37,
+    "documentation": "Program to make TeX DVI files from TeX source; default ‘tex’."
+},
+{
+    "data": 38,
+    "documentation": "Program to make TeX DVI files from Texinfo source; default ‘texi2dvi’."
+},
+{
+    "data": 39,
+    "documentation": "Program to translate Web into TeX; default ‘weave’."
+},
+{
+    "data": 40,
+    "documentation": "Program to translate C Web into TeX; default ‘cweave’."
+},
+{
+    "data": 41,
+    "documentation": "Program to translate Web into Pascal; default ‘tangle’."
+},
+{
+    "data": 42,
+    "documentation": "Program to translate C Web into C; default ‘ctangle’."
+},
+{
+    "data": 43,
+    "documentation": "Command to remove a file; default ‘rm -f’."
+},
+{
+    "data": 44,
+    "documentation": "Flags to give the archive-maintaining program; default ‘rv’."
+},
+{
+    "data": 45,
+    "documentation": "Extra flags to give to the assembler (when explicitly invoked on a ‘.s’ or ‘.S’ file)."
+},
+{
+    "data": 46,
+    "documentation": "Extra flags to give to the C compiler."
+},
+{
+    "data": 47,
+    "documentation": "Extra flags to give to the C++ compiler."
+},
+{
+    "data": 48,
+    "documentation": "Extra flags to give to the RCS co program."
+},
+{
+    "data": 49,
+    "documentation": "Extra flags to give to the C preprocessor and programs that use it (the C and Fortran compilers)."
+},
+{
+    "data": 50,
+    "documentation": "Extra flags to give to the Fortran compiler."
+},
+{
+    "data": 51,
+    "documentation": "Extra flags to give to the SCCS get program."
+},
+{
+    "data": 52,
+    "documentation": "Extra flags to give to compilers when they are supposed to invoke the linker, ‘ld’, such as -L. Libraries (-lfoo) should be added to the LDLIBS variable instead."
+},
+{
+    "data": 53,
+    "documentation": "Library flags or names given to compilers when they are supposed to invoke the linker, ‘ld’. LOADLIBES is a deprecated (but still supported) alternative to LDLIBS. Non-library linker flags, such as -L, should go in the LDFLAGS variable."
+},
+{
+    "data": 54,
+    "documentation": "Extra flags to give to Lex."
+},
+{
+    "data": 55,
+    "documentation": "Extra flags to give to Yacc."
+},
+{
+    "data": 56,
+    "documentation": "Extra flags to give to the Pascal compiler."
+},
+{
+    "data": 57,
+    "documentation": "Extra flags to give to the Fortran compiler for Ratfor programs."
+},
+{
+    "data": 58,
+    "documentation": "Extra flags to give to lint."
+}]
