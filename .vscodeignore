@@ -4,8 +4,7 @@
 .gitignore
 **/tsconfig.json
 **/tsconfig.base.json
-contributing.md
-.travis.yml
+tslint.json
 client/node_modules/**
 !client/node_modules/vscode-jsonrpc/**
 !client/node_modules/vscode-languageclient/**
