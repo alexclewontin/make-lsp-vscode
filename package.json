@@ -1,8 +1,9 @@
 {
 	"name": "make-lsp-vscode",
-	"description": "A language server for GNU Make, supporting implicit and automatic variables.",
+	"description": "A language server for GNU Make, supporting intellisense for implicit and automatic variables.",
 	"author": "Alex C. Lewontin",
 	"license": "MIT",
+	"publisher": "alexclewontin",
 	"version": "1.0.0",
 	"repository": {
 		"type": "git",
@@ -27,7 +28,13 @@
 	"devDependencies": {
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.11.7",
+		"ts-loader": "^6.2.1",
 		"tslint": "^5.16.0",
-		"typescript": "^3.6.4"
+		"typescript": "^3.6.4",
+		"webpack": "^4.41.4",
+		"webpack-cli": "^3.3.10"
+	},
+	"dependencies": {
+		"vsce": "^1.71.0"
 	}
 }

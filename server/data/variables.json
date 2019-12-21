@@ -1,0 +1,303 @@
+[{
+	"label": "$@",
+	"insertText": "@",
+	"data": 1
+},
+{
+	"label": "$%",
+	"insertText": "%",
+	"data": 2
+},
+{
+	"label": "$<",
+	"insertText": "<",
+	"data": 3
+},
+{
+	"label": "$?",
+	"insertText": "?",
+	"data": 4
+},
+{
+	"label": "$^",
+	"insertText": "^",
+	"data": 5
+},
+{
+	"label": "$+",
+	"insertText": "+",
+	"data": 6
+},			
+{
+	"label": "$|",
+	"insertText": "|",
+	"data": 7
+},			
+{
+	"label": "$*",
+	"insertText": "*",
+	"data": 8
+},
+{
+	"label": "$(@D)",
+	"insertText": "(@D)",
+	"data": 9
+},
+{
+	"label": "$(@F)",
+	"insertText": "(@F)",
+	"data": 10
+
+},
+{
+	"label": "$(%D)",
+	"insertText": "(%D)",
+	"data": 11
+
+},
+{
+	"label": "$(%F)",
+	"insertText": "(%F)",
+	"data": 12
+
+},
+{
+	"label": "$(*D)",
+	"insertText": "(*D)",
+	"data": 13
+
+},
+{
+	"label": "$(*F)",
+	"insertText": "(*F)",
+	"data": 14
+
+},
+{
+	"label": "$(<D)",
+	"insertText": "(<D)",
+	"data": 15
+
+},
+{
+	"label": "$(<F)",
+	"insertText": "(<F)",
+	"data": 16
+
+},
+{
+	"label": "$(^D)",
+	"insertText": "(^D)",
+	"data": 17
+
+},
+{
+	"label": "$(^F)",
+	"insertText": "(^F)",
+	"data": 18
+
+},
+{
+	"label": "$(+D)",
+	"insertText": "(+D)",
+	"data": 19
+
+},
+{
+	"label": "$(+F)",
+	"insertText": "(+F)",
+	"data": 20
+
+},
+{
+	"label": "$(?D)",
+	"insertText": "(?D)",
+	"data": 21
+
+},
+{
+	"label": "$(?F)",
+	"insertText": "(?D)",
+	"data": 22
+
+},
+{
+	"label": "AR",
+	"data": 23
+
+},
+{
+	"label": "AS",
+	"data": 24
+
+},
+{
+	"label": "CC",
+	"data": 25
+
+},
+{
+	"label": "CXX",
+	"data": 26
+
+},
+{
+	"label": "CPP",
+	"data": 27
+
+},
+{
+	"label": "FC",
+	"data": 28
+
+},
+{
+	"label": "M2C",
+	"data": 29
+
+},
+{
+	"label": "PC",
+	"data": 30
+	
+},
+{
+	"label": "CO",
+	"data": 31
+
+},
+{
+	"label": "GET",
+	"data": 32
+
+},
+{
+	"label": "LEX",
+	"data": 33
+
+},
+{
+	"label": "YACC",
+	"data": 34
+
+},
+{
+	"label": "LINT",
+	"data": 35
+
+},
+{
+	"label": "MAKEINFO",
+	"data": 36
+
+},
+{
+	"label": "TEX",
+	"data": 37
+
+},
+{
+	"label": "TEXI2DVI",
+	"data": 38
+
+},
+{
+	"label": "WEAVE",
+	"data": 39
+
+},
+{
+	"label": "CWEAVE",
+	"data": 40
+
+},
+{
+	"label": "TANGLE",
+	"data": 41
+
+},
+{
+	"label": "CTANGLE",
+	"data": 42
+
+},
+{
+	"label": "RM",
+	"data": 43
+
+},
+{
+	"label": "ARFLAGS",
+	"data": 44
+
+},
+{
+	"label": "ASFLAGS",
+	"data": 45
+
+},
+{
+	"label": "CFLAGS",
+	"data": 46
+
+},
+{
+	"label": "CXXFLAGS",
+	"data": 47
+
+},
+{
+	"label": "COFLAGS",
+	"data": 48
+
+},
+{
+	"label": "CPPFLAGS",
+	"data": 49
+
+},
+{
+	"label": "FFLAGS",
+	"data": 50
+
+},
+{
+	"label": "GFLAGS",
+	"data": 51
+
+},
+{
+	"label": "LDFLAGS",
+	"data": 52
+
+},
+{
+	"label": "LDLIBS",
+	"data": 53
+
+},
+{
+	"label": "LFLAGS",
+	"data": 54
+
+},
+{
+	"label": "YFLAGS",
+	"data": 55
+
+},
+{
+	"label": "PFLAGS",
+	"data": 56
+
+},
+{
+	"label": "RLAGS",
+	"data": 57
+
+},
+{
+	"label": "LINTFLAGS",
+	"data": 58
+
+}]
