@@ -14,6 +14,8 @@ import {
 	DidChangeConfigurationNotification,
 	CompletionItem,
 	CompletionItemKind,
+	Hover,
+	TextDocumentPositionParams
 } from 'vscode-languageserver';
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
@@ -32,12 +34,8 @@ connection.onInitialize((params: InitializeParams) => {
 
 	// Does the client support the `workspace/configuration` request?
 	// If not, we will fall back using global settings
-	hasConfigurationCapability = !!(
-		capabilities.workspace && !!capabilities.workspace.configuration
-	);
-	hasWorkspaceFolderCapability = !!(
-		capabilities.workspace && !!capabilities.workspace.workspaceFolders
-	);
+	hasConfigurationCapability = !!(capabilities.workspace && !!capabilities.workspace.configuration);
+	hasWorkspaceFolderCapability = !!(capabilities.workspace && !!capabilities.workspace.workspaceFolders);
 
 	return {
 		capabilities: {
@@ -63,35 +61,40 @@ connection.onInitialized(() => {
 	}
 });
 
-
 // This handler provides the initial list of the completion items.
-connection.onCompletion(
-	(_completionInfo: CompletionParams): CompletionItem[] => {
-	
-		let vars = require("../data/variables.json");
+connection.onCompletion((_completionInfo: CompletionParams): CompletionItem[] => {
 
-		if (_completionInfo.context && _completionInfo.context.triggerCharacter === '$') {
-			vars.forEach( function(value: any) {
-				value.kind = CompletionItemKind.Variable;
-				if (!/\\$[.]*/.test(value.label)) {
-					value.insertText = '(' + value.label + ')';
-				}
-			})
-		}
-		return vars;
+	let vars = require("../data/variables.json");
+
+	if (_completionInfo.context && _completionInfo.context.triggerCharacter === '$') {
+		vars.forEach(function(value: any) { value.insertText = value.data.refInsertText; });
+	} else {
+		vars.filter(function(value: any) { return (value.data.defInsertText); });
+		vars.forEach(function(value: any) { value.insertText = value.data.defInsertText; });
 	}
-);
+	return vars;
+
+});
 
 // This handler resolves additional information for the item selected in
 // the completion list.
-connection.onCompletionResolve(
-	(item: CompletionItem): CompletionItem => {
-		let docs = require("../data/variables.json");
-		item.documentation = docs[item.data];
-		return item;
-	}
-);
+connection.onCompletionResolve((_item: CompletionItem): CompletionItem => {
 
+	let docs = require("../data/documentation.json");
+	_item.documentation = docs[_item.data.def].documentation;
+	return _item;
+
+});
+
+
+connection.onHover((event): Hover => {
+	var item = {
+		contents: "hello"
+	}
+
+	return item;
+
+});
 
 // Make the text document manager listen on the connection
 // for open, change and close text document events

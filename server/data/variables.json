@@ -1,304 +1,491 @@
 [{
 	"label": "$@",
-	"insertText": "@",
-	"data": 1
-
+	"data": {
+		"def": 1,
+		"refInsertText": "@"
+	}
 },
 {
 	"label": "$%",
-	"insertText": "%",
-	"data": 2
+	"data": {
+		"def": 2,
+		"refInsertText": "%"
+	}
 },
 {
 	"label": "$<",
-	"insertText": "<",
-	"data": 3
+	"data": {
+		"def": 3,
+		"refInsertText": "<"
+	}
 },
 {
 	"label": "$?",
-	"insertText": "?",
-	"data": 4
+	"data": {
+		"def": 4,
+		"refInsertText": "?"
+	}
 },
 {
 	"label": "$^",
-	"insertText": "^",
-	"data": 5
+	"data": {
+		"def": 5,
+		"refInsertText": "^"
+	}
 },
 {
 	"label": "$+",
-	"insertText": "+",
-	"data": 6
+	"data": {
+		"def": 6,
+		"refInsertText": "+"
+	}
 },			
 {
 	"label": "$|",
-	"insertText": "|",
-	"data": 7
+	"data": {
+		"def": 7,
+		"refInsertText": "|"
+	}
 },			
 {
 	"label": "$*",
-	"insertText": "*",
-	"data": 8
+	"data": {
+		"def": 8,
+		"refInsertText": "*"
+	}
 },
 {
 	"label": "$(@D)",
-	"insertText": "(@D)",
-	"data": 9
+	"data": {
+		"def": 9,
+		"refInsertText": "(@D)"
+	}
 },
 {
 	"label": "$(@F)",
-	"insertText": "(@F)",
-	"data": 10
+	"data": {
+		"def": 10,
+		"refInsertText": "(@F)"
+	}
 
 },
 {
 	"label": "$(%D)",
-	"insertText": "(%D)",
-	"data": 11
+	"data": {
+		"def": 11,
+		"refInsertText": "(%D)"
+	}
 
 },
 {
 	"label": "$(%F)",
-	"insertText": "(%F)",
-	"data": 12
+	"data": {
+		"def": 12,
+		"refInsertText": "(%F)"
+	}
 
 },
 {
 	"label": "$(*D)",
-	"insertText": "(*D)",
-	"data": 13
+	"data": {
+		"def": 13,
+		"refInsertText": "(*D)"
+	}
 
 },
 {
 	"label": "$(*F)",
-	"insertText": "(*F)",
-	"data": 14
+	"data": {
+		"def": 14,
+		"refInsertText": "(*F)"
+	}
 
 },
 {
 	"label": "$(<D)",
-	"insertText": "(<D)",
-	"data": 15
+	"data": {
+		"def": 15,
+		"refInsertText": "(<D)"
+	}
 
 },
 {
 	"label": "$(<F)",
-	"insertText": "(<F)",
-	"data": 16
+	"data": {
+		"def": 16,
+		"refInsertText": "(<F)"
+	}
 
 },
 {
 	"label": "$(^D)",
-	"insertText": "(^D)",
-	"data": 17
+	"data": {
+		"def": 17,
+		"refInsertText": "(^D)"
+	}
 
 },
 {
 	"label": "$(^F)",
-	"insertText": "(^F)",
-	"data": 18
+	"data": {
+		"def": 18,
+		"refInsertText": "(^F)"
+	}
 
 },
 {
 	"label": "$(+D)",
-	"insertText": "(+D)",
-	"data": 19
+	"data": {
+		"def": 19,
+		"refInsertText": "(+D)"
+	}
 
 },
 {
 	"label": "$(+F)",
-	"insertText": "(+F)",
-	"data": 20
+	"data": {
+		"def": 20,
+		"refInsertText": "(+F)"
+	}
 
 },
 {
 	"label": "$(?D)",
-	"insertText": "(?D)",
-	"data": 21
+	"data": {
+		"def": 21,
+		"refInsertText": "(?D)"
+	}
 
 },
 {
 	"label": "$(?F)",
-	"insertText": "(?D)",
-	"data": 22
+	"data": {
+		"def": 22,
+		"refInsertText": "(?D)"
+	}
 
 },
 {
 	"label": "AR",
-	"data": 23
+	"data": {
+		"def": 23,
+		"defInsertText": "AR",
+		"refInsertText": "(AR)"
+	}
 
 },
 {
 	"label": "AS",
-	"data": 24
+	"data": {
+		"def": 24,
+		"defInsertText": "AS",
+		"refInsertText": "(AS)"
+	}
 
 },
 {
 	"label": "CC",
-	"data": 25
+	"data": {
+		"def": 25,
+		"defInsertText": "CC",
+		"refInsertText": "(CC)"
+	}
 
 },
 {
 	"label": "CXX",
-	"data": 26
+	"data": {
+		"def": 26,
+		"defInsertText": "CXX",
+		"refInsertText": "(CXX)"
+	}
 
 },
 {
 	"label": "CPP",
-	"data": 27
+	"data": {
+		"def": 27,
+		"defInsertText": "CPP",
+		"refInsertText": "(CPP)"
+	}
 
 },
 {
 	"label": "FC",
-	"data": 28
+	"data": {
+		"def": 28,
+		"defInsertText": "FC",
+		"refInsertText": "(FC)"
+	}
 
 },
 {
 	"label": "M2C",
-	"data": 29
+	"data": {
+		"def": 29,
+		"defInsertText": "M2C",
+		"refInsertText": "(M2C)"
+	}
 
 },
 {
 	"label": "PC",
-	"data": 30
+	"data": {
+		"def": 30,
+		"defInsertText": "PC",
+		"refInsertText": "(PC)"
+	}
 	
 },
 {
 	"label": "CO",
-	"data": 31
+	"data": {
+		"def": 31,
+		"defInsertText": "CO",
+		"refInsertText": "(CO)"
+	}
 
 },
 {
 	"label": "GET",
-	"data": 32
+	"data": {
+		"def": 32,
+		"defInsertText": "GET",
+		"refInsertText": "(GET)"
+	}
 
 },
 {
 	"label": "LEX",
-	"data": 33
+	"data": {
+		"def": 33,
+		"defInsertText": "LEX",
+		"refInsertText": "(LEX)"
+	}
 
 },
 {
 	"label": "YACC",
-	"data": 34
+	"data": {
+		"def": 34,
+		"defInsertText": "YACC",
+		"refInsertText": "(YACC)"
+	}
 
 },
 {
 	"label": "LINT",
-	"data": 35
+	"data": {
+		"def": 35,
+		"defInsertText": "LINT",
+		"refInsertText": "(LINT)"
+	}
 
 },
 {
 	"label": "MAKEINFO",
-	"data": 36
+	"data": {
+		"def": 36,
+		"defInsertText": "MAKEINFO",
+		"refInsertText": "(MAKEINFO)"
+	}
 
 },
 {
 	"label": "TEX",
-	"data": 37
+	"data": {
+		"def": 37,
+		"defInsertText": "TEX",
+		"refInsertText": "(TEX)"
+	}
 
 },
 {
 	"label": "TEXI2DVI",
-	"data": 38
+	"data": {
+		"def": 38,
+		"defInsertText": "TEXI2DVI",
+		"refInsertText": "(TEXI2DVI)"
+	}
 
 },
 {
 	"label": "WEAVE",
-	"data": 39
+	"data": {
+		"def": 39,
+		"defInsertText": "WEAVE",
+		"refInsertText": "(WEAVE)"
+	}
 
 },
 {
 	"label": "CWEAVE",
-	"data": 40
+	"data": {
+		"def": 40,
+		"defInsertText": "CWEAVE",
+		"refInsertText": "(CWEAVE)"
+	}
 
 },
 {
 	"label": "TANGLE",
-	"data": 41
+	"data": {
+		"def": 41,
+		"defInsertText": "TANGLE",
+		"refInsertText": "(TANGLE)"
+	}
 
 },
 {
 	"label": "CTANGLE",
-	"data": 42
+	"data": {
+		"def": 42,
+		"defInsertText": "CTANGLE",
+		"refInsertText": "(CTANGLE)"
+	}
 
 },
 {
 	"label": "RM",
-	"data": 43
+	"data": {
+		"def": 43,
+		"defInsertText": "RM",
+		"refInsertText": "(RM)"
+	}
 
 },
 {
 	"label": "ARFLAGS",
-	"data": 44
+	"data": {
+		"def": 44,
+		"defInsertText": "ARFLAGS",
+		"refInsertText": "(ARFLAGS)"
+	}
 
 },
 {
 	"label": "ASFLAGS",
-	"data": 45
+	"data": {
+		"def": 45,
+		"defInsertText": "ASFLAGS",
+		"refInsertText": "(ASFLAGS)"
+	}
 
 },
 {
 	"label": "CFLAGS",
-	"data": 46
+	"data": {
+		"def": 46,
+		"defInsertText": "CFLAGS",
+		"refInsertText": "(CFLAGS)"
+	}
 
 },
 {
 	"label": "CXXFLAGS",
-	"data": 47
+	"data": {
+		"def": 47,
+		"defInsertText": "CXXFLAGS",
+		"refInsertText": "(CXXFLAGS)"
+	}
 
 },
 {
 	"label": "COFLAGS",
-	"data": 48
+	"data": {
+		"def": 48,
+		"defInsertText": "COFLAGS",
+		"refInsertText": "(COFLAGS)"
+	}
 
 },
 {
 	"label": "CPPFLAGS",
-	"data": 49
+	"data": {
+		"def": 49,
+		"defInsertText": "CPPFLAGS",
+		"refInsertText": "(CPPFLAGS)"
+	}
 
 },
 {
 	"label": "FFLAGS",
-	"data": 50
+	"data": {
+		"def": 50,
+		"defInsertText": "FFLAGS",
+		"refInsertText": "(FFLAGS)"
+	}
 
 },
 {
 	"label": "GFLAGS",
-	"data": 51
+	"data": {
+		"def": 51,
+		"defInsertText": "GFLAGS",
+		"refInsertText": "(GFLAGS)"
+	}
 
 },
 {
 	"label": "LDFLAGS",
-	"data": 52
+	"data": {
+		"def": 52,
+		"defInsertText": "LDFLAGS",
+		"refInsertText": "(LDFLAGS)"
+	}
 
 },
 {
 	"label": "LDLIBS",
-	"data": 53
+	"data": {
+		"def": 53,
+		"defInsertText": "LDLIBS",
+		"refInsertText": "(LDLIBS)"
+	}
 
 },
 {
 	"label": "LFLAGS",
-	"data": 54
+	"data": {
+		"def": 54,
+		"defInsertText": "LFLAGS",
+		"refInsertText": "(LFLAGS)"
+	}
 
 },
 {
 	"label": "YFLAGS",
-	"data": 55
+	"data": {
+		"def": 55,
+		"defInsertText": "YFLAGS",
+		"refInsertText": "(YFLAGS)"
+	}
 
 },
 {
 	"label": "PFLAGS",
-	"data": 56
+	"data": {
+		"def": 56,
+		"defInsertText": "PFLAGS",
+		"refInsertText": "(PFLAGS)"
+	}
 
 },
 {
 	"label": "RLAGS",
-	"data": 57
+	"data": {
+		"def": 57,
+		"defInsertText": "RLAGS",
+		"refInsertText": "(RLAGS)"
+	}
 
 },
 {
 	"label": "LINTFLAGS",
-	"data": 58
+	"data": {
+		"def": 58,
+		"defInsertText": "LINTFLAGS",
+		"refInsertText": "(LINTFLAGS)"
+	}
 
 }]
