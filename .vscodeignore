@@ -4,10 +4,9 @@
 .gitignore
 **/tsconfig.json
 **/tsconfig.base.json
-tslint.json
-client/node_modules/**
-!client/node_modules/vscode-jsonrpc/**
-!client/node_modules/vscode-languageclient/**
-!client/node_modules/vscode-languageserver-protocol/**
-!client/node_modules/vscode-languageserver-types/**
-!client/node_modules/semver/**
+**/tslint.json
+client/**
+shared.webpack.config.js
+!client/out/extension.js
+server/**
+!server/out/server.js

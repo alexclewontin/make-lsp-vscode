@@ -17,7 +17,7 @@
 	"activationEvents": [
 		"onLanguage:makefile"
 	],
-	"main": "./dist/extension",
+	"main": "./client/out/extension",
 	"scripts": {
 		"vscode:prepublish": "npm run webpack",
 		"webpack": "npm run clean && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
