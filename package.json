@@ -19,15 +19,20 @@
 	],
 	"main": "./dist/extension",
 	"scripts": {
-		"vscode:prepublish": "webpack --mode production",
+		"vscode:prepublish": "npm run webpack",
+		"webpack": "npm run clean && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
+		"webpack:dev": "npm run clean && webpack --mode none --config ./client/webpack.config.js && webpack --mode none --config ./server/webpack.config.js",
 		"compile": "webpack --mode none",
 		"watch": "webpack --mode none --watch",
 		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
-		"test": "sh ./scripts/e2e.sh"
+		"test": "sh ./scripts/e2e.sh",
+		"clean": "rimraf client/out && rimraf server/out"
 	},
 	"devDependencies": {
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.11.7",
+		"merge-options": "^2.0.0",
+		"rimraf": "^3.0.0",
 		"ts-loader": "^6.2.1",
 		"tslint": "^5.16.0",
 		"typescript": "^3.6.4",
