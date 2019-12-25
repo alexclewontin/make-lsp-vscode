@@ -11,3 +11,4 @@ shared.webpack.config.js
 server/**
 !server/out/server.js
 node_modules
+test
