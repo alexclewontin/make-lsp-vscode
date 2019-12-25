@@ -7,17 +7,14 @@
 
 import {
 	createConnection,
-	TextDocument,
 	TextDocuments,
 	CompletionParams,
 	ProposedFeatures,
 	InitializeParams,
 	DidChangeConfigurationNotification,
 	CompletionItem,
-	Hover,
 	TextDocumentPositionParams,
 	TextDocumentSyncKind,
-	MarkupContent,
 	MarkupKind
 } from 'vscode-languageserver';
 
@@ -100,7 +97,7 @@ async function parseSymbols(_data: string) {
 connection.onHover(async (_params: TextDocumentPositionParams) => {
 	let doc = documents.get(_params.textDocument.uri);
 	if(!doc) { return { contents : [] }; }
-	
+
 	let line = doc.getText().split('\n')[_params.position.line];
 	//let line = text.getText().split('\n')[_params.position.line];
 	connection.console.log(`Hovering on (${_params.position.line}, ${_params.position.character}): ${line}`);
