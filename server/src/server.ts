@@ -73,12 +73,12 @@ documents.onDidChangeContent(async change => {
 	await new Promise(r => setTimeout(r, 1000));
 	exec(`make --directory=${dir} -p -n`, async (_error: Error, _stdout: string) => {
 		connection.console.log(`Parsing symbols for ${change.document.uri}`);
-		symMap.set(change.document.uri, await parseSymbols(_stdout));
+		symMap.set(change.document.uri, parseSymbols(_stdout));
 	});
 
 });
 
-async function parseSymbols(_data: string) {
+function parseSymbols(_data: string) {
 	let syms: Map<string, string> = new Map();
 	let search_pattern = /^([^#]*?)(:=|=)(.*?)$/gm;
 	let match = search_pattern.exec(_data);
@@ -165,11 +165,6 @@ connection.onCompletionResolve((_item: CompletionItem): CompletionItem => {
 	return _item;
 
 });
-
-
-
-
-
 
 // Make the text document manager listen on the connection
 // for open, change and close text document events
