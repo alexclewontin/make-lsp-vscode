@@ -5,6 +5,7 @@
  * See LICENSE for license information.
  * ------------------------------------------------------------------------------------------ */
 
+import { TextDocument } from 'vscode-languageserver-textdocument';
 import {
 	createConnection,
 	TextDocuments,
@@ -16,9 +17,8 @@ import {
 	TextDocumentPositionParams,
 	TextDocumentSyncKind,
 	MarkupKind
-} from 'vscode-languageserver';
-
-import URI from 'vscode-uri';
+} from 'vscode-languageserver/node';
+import { URI } from 'vscode-uri';
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -26,7 +26,7 @@ let connection = createConnection(ProposedFeatures.all);
 
 // Create a simple text document manager. The text document manager
 // supports full document sync only
-let documents: TextDocuments = new TextDocuments();
+let documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument);
 let symMap: Map<string, Map<string, string> > = new Map();
 
 
@@ -165,11 +165,6 @@ connection.onCompletionResolve((_item: CompletionItem): CompletionItem => {
 	return _item;
 
 });
-
-
-
-
-
 
 // Make the text document manager listen on the connection
 // for open, change and close text document events
